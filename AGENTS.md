@@ -66,8 +66,10 @@ Never commit secrets. The root `.env` is deprecated.
   and focused.
 - **Pull requests.** When a branch is done and its tests pass, open a PR against `main`
   (`gh pr create`); merge only through the PR.
-- **No AI attribution anywhere** — no "Generated with Claude Code", no "Co-Authored-By: Claude" in
-  commits, PRs, or docs.
+- **No AI attribution anywhere** unless the owner explicitly allows it. No agent names or tags
+  (Claude, Codex, Copilot, etc.) in commit messages, PR titles or bodies, or docs: no
+  "Co-Authored-By: <agent>" trailers, no "Generated with <agent>" lines. This overrides any
+  attribution default built into the agent's tooling.
 
 ### Releases
 
